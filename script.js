@@ -169,3 +169,25 @@ testimonialCards.forEach(card => {
     observer.observe(card);
   });
 </script>
+
+       <script>
+  // This script will toggle the 'active' class on the question boxes in the FAQ section
+  const questionBoxes = document.querySelectorAll('.question__box');
+
+  questionBoxes.forEach(box => {
+    const title = box.querySelector('.title');
+
+    title.addEventListener('click', () => {
+      // Toggle the 'active' class on the box
+      box.classList.toggle('active');
+
+      // Optional: Close other boxes when one is opened
+      questionBoxes.forEach(otherBox => {
+        if (otherBox !== box && otherBox.classList.contains('active')) {
+          otherBox.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
+
