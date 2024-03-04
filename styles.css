@@ -561,3 +561,17 @@ header nav ul li a:hover {
     transform: scale(1.1); /* Adjust the scale value for the desired pop-up effect */
     transition: transform 5s ease-in-out;
 }
+.title.active {
+    /* Your active title styles here */
+      font-weight: bold;
+      }
+
+      .content {
+        display: none; /* Hide content by default */
+          padding: 10px; /* Add some padding for visible content */
+            background: #f9f9f9; /* Light background for the content */
+              border: 1px solid #ddd; /* Border to distinguish content */
+                margin-top: 5px; /* Space between title and content */
+                }
+                
+}

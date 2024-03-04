@@ -298,3 +298,18 @@
      </body>
 
 </html>
+<script>
+      // Corrected FAQ dropdown script
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const faqTitles = document.querySelectorAll('.question__box .title');
+
+                faqTitles.forEach(title => {
+                      title.addEventListener('click', () => {
+                              const content = title.nextElementSibling;
+                                      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                                              title.classList.toggle('active'); // Toggle the 'active' class for visual indication
+                                                    });
+                                                        });
+                                                          });
+                                                          </script>
+                                                          
